@@ -101,8 +101,11 @@ DSH 0.2.2 自带 `@deepseek-ai/dsh-message-quotes`：它在会话选区旁放一
 ## 开发
 
 ```bash
+node scripts/check.mjs   # 校验三处必须一致的地方：包名 = client.js 里的模块 id = cordis.patch.yml 的 name
 node --check client.js   # 语法检查（无构建步骤）
 ```
+
+**改名时三处必须一起改**：`package.json` 的 `name`、`client.js` 顶部 `window.__ModuleLoader__.load({ id })`、`cordis.patch.yml` 里 insert 的 `name`。模块 id 与包名不一致时，Host 仍会按包名加载 bundle，loader 会把它执行两次并报 `duplicate factory registration`——表现为 **DSH 重启时渲染进程启动失败**（`renderer-startup` 崩溃报告），而不是普通的插件报错。`scripts/check.mjs` 就是防这个的。
 
 profile 里以 `link:` 方式安装时，改完 `client.js` 会被 client-hmr 自动热重载，几秒内生效，无需重启或刷新。
 
