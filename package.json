@@ -5,13 +5,13 @@
   "type": "module",
   "license": "MIT",
   "author": "YuzhenZhou1327 <nuchenzhou@qq.com>",
-  "homepage": "https://github.com/YuzhenZhou1327/dsh-selection-quote#readme",
+  "homepage": "https://github.com/YuzhenZhou1327/dsh-quote#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YuzhenZhou1327/dsh-selection-quote.git"
+    "url": "git+https://github.com/YuzhenZhou1327/dsh-quote.git"
   },
   "bugs": {
-    "url": "https://github.com/YuzhenZhou1327/dsh-selection-quote/issues"
+    "url": "https://github.com/YuzhenZhou1327/dsh-quote/issues"
   },
   "keywords": [
     "deepseek",

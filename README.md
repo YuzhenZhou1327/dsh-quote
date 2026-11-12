@@ -64,10 +64,10 @@ DSH 0.2.2 自带 `@deepseek-ai/dsh-message-quotes`：它在会话选区旁放一
    在 DSH 的设置 → 插件里粘贴：
 
    ```
-   github:YuzhenZhou1327/dsh-selection-quote
+   github:YuzhenZhou1327/dsh-quote
    ```
 
-   或者直接对会话里的 AI 说：「用 plugin_manager 安装 `github:YuzhenZhou1327/dsh-selection-quote`」。
+   或者直接对会话里的 AI 说：「用 plugin_manager 安装 `github:YuzhenZhou1327/dsh-quote`」。
 
 2. **npm**
 
