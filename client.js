@@ -6,7 +6,10 @@
  * Markdown table.
  */
 window.__ModuleLoader__.load({
-  id: '@local/selection-quote',
+  // Must equal the package.json "name": the Host serves this bundle under that
+  // module id, and a mismatch makes the loader execute it twice (duplicate
+  // factory registration) and abort renderer startup.
+  id: 'dsh-selection-quote-plugin',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
